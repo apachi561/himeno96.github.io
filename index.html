@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>himeno96_ | Commissions</title>
+<meta name="description" content="Commission info, prices, and terms for himeno96_, freelance illustrator and indie game dev.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff8fb; --card:#ffffff; --blush:#ffe3ee; --lav:#ebe4ff; --mint:#d8f3e5;
+  --ink:#3b2a4a; --soft:#6f5f7d; --berry:#c9467f; --line:#f0d9e5;
+  --open:#2f8f5b; --closed:#b3394f;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 "Nunito",system-ui,sans-serif;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a{color:var(--berry)}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:"Fredoka","Nunito",sans-serif;font-weight:600;line-height:1.2;margin:0 0 .6rem}
+h2{font-size:1.7rem}
+h3{font-size:1.2rem;margin-top:1.6rem}
+p{margin:0 0 1rem;max-width:68ch}
+ul,ol{padding-left:1.2rem;max-width:68ch}
+li{margin-bottom:.4rem}
+section{padding:3rem 1.25rem;max-width:860px;margin:0 auto}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,248,251,.92);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top)}
+nav ul{list-style:none;display:flex;gap:1.1rem;overflow-x:auto;margin:0 auto;padding:.7rem 1.25rem;max-width:860px;white-space:nowrap}
+nav li{margin:0}
+nav a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem}
+nav a:hover{color:var(--berry)}
+
+/* hero */
+.hero{text-align:center;padding-top:3.5rem;background:radial-gradient(circle at 20% 0,var(--blush),transparent 55%),radial-gradient(circle at 85% 20%,var(--lav),transparent 50%)}
+.hero h1{font-size:clamp(2.6rem,10vw,4.6rem);margin-bottom:.2rem}
+.hero .sub{font-size:1.25rem;color:var(--soft);margin:0 auto 1.4rem}
+.status{display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1.2rem;border-radius:999px;background:#fff;
+  border:2px solid currentColor;font-family:"Fredoka",sans-serif;font-weight:600;font-size:1.15rem;transform:rotate(-2deg)}
+.status::before{content:"";width:.7rem;height:.7rem;border-radius:50%;background:currentColor}
+.status.open{color:var(--open)} .status.closed{color:var(--closed)}
+.btn{display:inline-block;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;padding:.8rem 1.6rem;border-radius:999px;margin-top:1.4rem}
+.btn:hover{background:#a8336a}
+.btn.alt{background:#fff;color:var(--ink);border:2px solid var(--line);margin-top:0}
+
+/* order links */
+.links{list-style:none;padding:0;display:grid;gap:.7rem;max-width:none}
+.links a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:18px;padding:1rem 1.2rem}
+.links a:hover{border-color:var(--berry)}
+.links b{display:block;font-family:"Fredoka",sans-serif;font-size:1.15rem}
+.links span{color:var(--soft);font-size:.95rem}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.8rem}
+.gallery img,.gallery .ph{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;border:2px solid var(--line);background:var(--lav)}
+.gallery .ph{display:grid;place-items:center;color:var(--soft);font-weight:700}
+
+/* prices */
+.table-wrap{overflow-x:auto;border:2px solid var(--line);border-radius:16px;background:var(--card);margin-bottom:1rem}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{padding:.65rem .8rem;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--blush);font-family:"Fredoka",sans-serif;font-weight:500}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+.note{color:var(--soft);font-size:.95rem}
+
+/* love / won't */
+.two{display:grid;gap:1rem}
+@media (min-width:640px){.two{grid-template-columns:1fr 1fr}}
+.box{border-radius:20px;padding:1.2rem 1.4rem}
+.box.love{background:var(--mint)} .box.wont{background:var(--lav)}
+.box h3{margin-top:0}
+.box ul{margin:0}
+
+/* tos */
+details{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:.2rem 1.1rem;margin-bottom:.6rem}
+summary{cursor:pointer;font-family:"Fredoka",sans-serif;font-weight:500;font-size:1.1rem;padding:.7rem 0}
+details[open]{border-color:var(--berry)}
+details ul{margin-top:0}
+
+/* game */
+.game{background:var(--lav);border-radius:28px;max-width:860px}
+.game-wrap{padding:0 1.25rem}
+.bar{height:1.2rem;border-radius:999px;background:#fff;overflow:hidden;border:2px solid #fff}
+.bar i{display:block;height:100%;width:0;background:var(--berry);border-radius:999px;transition:width .6s}
+.goal{display:flex;justify-content:space-between;font-weight:700;margin:.5rem 0 1rem}
+footer{text-align:center;padding:2.5rem 1.25rem 3rem;color:var(--soft)}
+</style>
+</head>
+<body>
+
+<nav aria-label="Page sections">
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#scope">Love to do</a></li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#game">My game</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <section>
+    <h1>himeno96_</h1>
+    <p class="sub" style="margin-inline:auto">Illustration commissions</p>
+    <span class="status" id="status"></span>
+    <p style="margin:1.2rem auto 0;color:var(--soft)">Hi! I'm a freelance illustrator and an indie game dev. Please read the terms before ordering. Questions are always welcome.</p>
+    <a class="btn" href="#order">Order now</a>
+  </section>
+</header>
+
+<section id="order">
+  <h2>Where to order</h2>
+  <p>Pick whichever place is easiest for you.</p>
+  <ul class="links">
+    <li><a href="#" data-link="vgen"><b>VGen</b><span>Payment handled by the platform. Platform rules apply.</span></a></li>
+    <li><a href="#" data-link="commissiongg"><b>commission.gg</b><span>Payment handled by the platform. Platform rules apply.</span></a></li>
+    <li><a href="#" data-link="kofi"><b>Ko-fi</b><span>Follows my terms below.</span></a></li>
+    <li><a href="#" data-link="dm"><b>Direct message (Twitter/X)</b><span>Best for custom requests. Follows my terms below.</span></a></li>
+  </ul>
+  <p style="margin-top:1.2rem"><a class="btn alt" href="#" data-link="queue">See my queue</a></p>
+
+  <h3>How it works</h3>
+  <ol>
+    <li>Contact me on a platform above.</li>
+    <li>Send your brief: references, character details, and whether the piece is for personal or commercial use. Tell me here if you don't want it posted publicly.</li>
+    <li>I review the brief and send a quote. I can decline any brief before payment.</li>
+    <li>Full payment confirms your spot in the queue. I start only after payment.</li>
+    <li>I send a sketch. After you approve it, I finish the piece.</li>
+    <li>I email you the final files.</li>
+  </ol>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="prices">
+  <h2>Prices (USD)</h2>
+  <p>Prices are per character, for personal use. They are starting prices; your final quote depends on detail and complexity.</p>
+
+  <h3>Sketch</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Scale</th><th>Line</th><th>Sketch color</th><th>Flat color</th><th>Painted</th></tr>
+    <tr><td>Headshot</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+    <tr><td>Bust-up</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+    <tr><td>Full body</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+  </table></div>
+
+  <h3>Line art</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Scale</th><th>Line only</th><th>Base color</th><th>Flat color</th><th>Full color</th><th>Painted</th></tr>
+    <tr><td>Headshot</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+    <tr><td>Bust-up</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+    <tr><td>Full body</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td><td>$–</td></tr>
+  </table></div>
+
+  <h3>Add-ons</h3>
+  <ul>
+    <li>Extra character: starts at the base price of that scale, plus detail</li>
+    <li>Simple background: +$–</li>
+    <li>Prop or object: +$–</li>
+    <li>Transparent background: +$– (ask before work starts)</li>
+    <li>Commercial use: starts at ×2 the final price. Discuss it with me before work starts.</li>
+  </ul>
+</section>
+
+<section id="scope">
+  <h2>What I draw</h2>
+  <div class="two">
+    <div class="box love">
+      <h3>💗 Love to do</h3>
+      <ul><li>Original characters</li><li>Fanart</li><li>Character design</li><li>Cute creatures and mascots</li><li>Props and backgrounds</li></ul>
+    </div>
+    <div class="box wont">
+      <h3>✖ Won't do</h3>
+      <ul><li>Realistic style</li><li>NSFW</li><li>Caricature</li></ul>
+    </div>
+  </div>
+  <p class="note" style="margin-top:.8rem">Edit these lists to match your own.</p>
+</section>
+
+<section id="terms">
+  <h2>Terms of service</h2>
+  <p>By commissioning me, you agree to everything below. If you order through VGen or commission.gg, the platform's rules come first for payment, refunds, and disputes. These terms add to them for usage rights, revisions, and scope. If they conflict, the platform's rules win. Orders through DM or Ko-fi follow these terms in full.</p>
+
+  <details><summary>Before you order and payment</summary>
+    <ul>
+      <li>I can decline any request before payment, for any reason.</li>
+      <li>I add you to the queue only after we agree on the brief and I receive full payment.</li>
+      <li>Full payment is required before I start any work.</li>
+      <li>Fees charged by the platform or payment processor are not refundable.</li>
+    </ul>
+  </details>
+  <details><summary>Turnaround</summary>
+    <ul>
+      <li>Estimated completion is 1 to 14 days after I receive payment, depending on complexity and my queue.</li>
+      <li>No rush orders. I work in queue order only.</li>
+      <li>If something delays your piece, I will tell you.</li>
+    </ul>
+  </details>
+  <details><summary>Revisions</summary>
+    <ul>
+      <li>You get 3 revision rounds during the sketch stage. Each round can include any number of changes.</li>
+      <li>I fix my own mistakes for free (wrong color, misread reference, and so on). They don't count toward your 3 rounds.</li>
+      <li>After you approve the sketch, major changes are no longer possible. Extra rounds are quoted separately.</li>
+      <li>Changing the brief after approval (new outfit, new composition, new character) counts as a new commission.</li>
+    </ul>
+  </details>
+  <details><summary>Refunds</summary>
+    <ul>
+      <li>Before I begin the sketch: full refund, minus platform or payment fees.</li>
+      <li>Sketch sent but not approved: 50% refund.</li>
+      <li>Sketch approved, or work has moved to line art or coloring: no refund.</li>
+      <li>If I cancel the commission: full refund.</li>
+    </ul>
+  </details>
+  <details><summary>Usage rights</summary>
+    <ul>
+      <li>Personal use: display, save, and share on social media with credit to me, or use as a profile picture or in non-income personal projects.</li>
+      <li>Commercial use means anything that earns income or promotes something that does: merchandise, book covers or illustrations, monetized channels or streams, ads, logos, and game assets. Discuss it with me before work starts. It is priced from ×2 the final price.</li>
+      <li>If you use the work commercially without telling me, you owe the commercial rate retroactively and I may refuse future commissions.</li>
+      <li>Do not put my work into any AI tool, generator, or training dataset.</li>
+      <li>Do not resell my work, edit it and claim it as your own, or remove my signature or watermark.</li>
+      <li>I keep the copyright to everything I draw.</li>
+    </ul>
+  </details>
+  <details><summary>Portfolio</summary>
+    <ul>
+      <li>I may post the finished piece, with a watermark, on my portfolio and social media.</li>
+      <li>If you don't want it shown, tell me in your brief, before work starts.</li>
+    </ul>
+  </details>
+  <details><summary>Delivery</summary>
+    <ul>
+      <li>I send files by email only, after the work is complete.</li>
+      <li>Format: PNG, 350 dpi, 2000 to 3000 px on the long side. Tell me in your brief if you need a different size.</li>
+      <li>The default background is white. Ask for a transparent background before work starts.</li>
+      <li>I don't include layered files (PSD) unless we agree on it.</li>
+    </ul>
+  </details>
+</section>
+
+<div class="game-wrap">
+<section id="game" class="game">
+  <h2>Support my game</h2>
+  <p>I'm also an indie game dev. Part of my commission income goes toward a new PC so I can finish my game, which already has a working prototype.</p>
+  <div class="bar" role="progressbar" id="bar" aria-valuemin="0" aria-valuemax="100" aria-label="PC fund progress"><i id="fill"></i></div>
+  <div class="goal"><span id="raised"></span><span id="goal"></span></div>
+  <a class="btn" href="#" data-link="support" style="margin-top:0">Support the game</a>
+</section>
+</div>
+
+<footer>
+  <p style="margin-inline:auto">© himeno96_ · <a href="#" data-link="dm">Contact me</a> · <a href="#top">Back to top</a></p>
+</footer>
+
+<script>
+/* ===== EDIT THESE ===== */
+const STATUS = "open";          // "open" or "closed"
+const LINKS = {
+  vgen: "",         // your VGen page
+  commissiongg: "", // your commission.gg page
+  kofi: "",         // your Ko-fi page
+  dm: "",           // your Twitter/X profile
+  queue: "",        // your public queue sheet
+  support: ""       // Ko-fi or game page
+};
+const GALLERY = [   // add image URLs, e.g. "images/art1.png"
+];
+const GOAL = 1000;    // PC goal in USD
+const RAISED = 0;     // saved so far in USD
+/* ====================== */
+
+const s = document.getElementById("status");
+s.className = "status " + (STATUS === "open" ? "open" : "closed");
+s.textContent = STATUS === "open" ? "Commissions open" : "Commissions closed";
+
+document.querySelectorAll("[data-link]").forEach(a => {
+  const url = LINKS[a.dataset.link];
+  if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+});
+
+const g = document.getElementById("gallery");
+if (GALLERY.length) {
+  GALLERY.forEach(src => { const i = new Image(); i.src = src; i.alt = "Commission sample by himeno96_"; i.loading = "lazy"; g.appendChild(i); });
+} else {
+  for (let i = 0; i < 6; i++) { const d = document.createElement("div"); d.className = "ph"; d.textContent = "Art coming soon"; g.appendChild(d); }
+}
+
+const pct = Math.min(100, Math.round(RAISED / GOAL * 100));
+document.getElementById("fill").style.width = pct + "%";
+document.getElementById("bar").setAttribute("aria-valuenow", pct);
+document.getElementById("raised").textContent = "$" + RAISED + " saved";
+document.getElementById("goal").textContent = "Goal: $" + GOAL;
+</script>
+</body>
+</html>
